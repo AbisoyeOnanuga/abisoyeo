@@ -12,15 +12,59 @@ body {
     font-family: 'Press Start 2P', cursive; /* Retro font */
 }
 
-.console {
+.gameboy-advance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 15px solid #333;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #444;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #636363; /* Gameboy Advance body color */
     width: 90%;
     max-width: 800px;
-    height: 600px;
     position: relative;
+}
+
+.console-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.d-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-pad div {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.d-pad-center {
+    background-color: #111;
+}
+
+.buttons-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-a, .button-b {
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.2em;
 }
 
 .console-screen {
@@ -123,4 +167,70 @@ body {
 .button--small {
     font-size: 0.8em;
     padding: 3px 8px;
+}
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #444;
+    text-align: center;
+    color: #FFF;
+    border-top: 5px solid #333;
+    position: relative;
+}
+
+.footer__copy {
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+.footer-social i {
+    font-size: 1.5em;
+}
+
+/* Button hover effects */
+.button, .button--small {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover, .button--small:hover {
+    background-color: #00FF00;
+    color: #000;
+}
+
+/* D-pad and button hover effects */
+.d-pad div:hover, .button-a:hover, .button-b:hover {
+    background-color: #00FF00;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .gameboy-advance {
+        width: 100%;
+        height: auto;
+    }
+
+    .console-screen {
+        height: auto;
+    }
+
+    .header__container, .footer__copy, .social__links, .skills__container, .projects__container, .award__container, .footer-social {
+        flex-direction: column;
+    }
+
+    .nav__list, .footer-social {
+        flex-direction: column;
+        align-items: center;
+    }
 }
