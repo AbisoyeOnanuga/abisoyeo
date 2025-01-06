@@ -3,13 +3,13 @@
 /* General styles */
 body {
     background-color: #000;
-    color: #00FF00; /* Green text for that retro look */
+    color: #00FF00;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Press Start 2P', cursive; /* Retro font */
+    font-family: 'Press Start 2P', cursive;
 }
 
 .gameboy-advance {
@@ -19,28 +19,67 @@ body {
     border: 15px solid #333;
     border-radius: 20px;
     padding: 10px;
-    background-color: #636363; /* Gameboy Advance body color */
+    background-color: #636363;
     width: 90%;
     max-width: 800px;
     position: relative;
+    margin: 0 auto;
 }
 
-.console-buttons {
+.console-screen {
+    background-color: #222;
+    border: 5px solid #000;
+    border-radius: 5px;
+    width: 90%;
+    aspect-ratio: 3 / 2;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-l, .button-r {
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 20px;
+    background-color: #444;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button-l {
+    left: 20px;
+}
+
+.button-r {
+    right: 20px;
+}
+
+.control-buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .d-pad {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
 
 .d-pad div {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: #333;
     margin: 2px;
     border-radius: 3px;
@@ -52,6 +91,8 @@ body {
 
 .buttons-group {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -67,21 +108,24 @@ body {
     font-size: 1.2em;
 }
 
-.console-screen {
-    background-color: #222;
-    border: 5px solid #000;
-    border-radius: 5px;
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-    padding: 20px;
-    box-sizing: border-box;
+.start-select {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 10px;
 }
 
+.button-start, .button-select {
+    width: 70px;
+    height: 30px;
+    background-color: #444;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Content styling */
 .header__container, .footer__copy, .social__links, .footer-social {
     width: 100%;
     display: flex;
@@ -116,12 +160,12 @@ body {
 }
 
 .title-highlight {
-    color: #9A32CD; /* Purple highlight */
+    color: #9A32CD;
 }
 
 .button {
     color: #FFF;
-    background-color: #9A32CD; /* Purple button */
+    background-color: #9A32CD;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -210,7 +254,7 @@ body {
 }
 
 /* D-pad and button hover effects */
-.d-pad div:hover, .button-a:hover, .button-b:hover {
+.d-pad div:hover, .button-a:hover, .button-b:hover, .button-start:hover, .button-select:hover {
     background-color: #00FF00;
 }
 
