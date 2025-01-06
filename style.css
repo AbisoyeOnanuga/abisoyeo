@@ -1,0 +1,126 @@
+/* assets/css/styles.css */
+
+/* General styles */
+body {
+    background-color: #000;
+    color: #00FF00; /* Green text for that retro look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+}
+
+.console {
+    border: 15px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #444;
+    width: 90%;
+    max-width: 800px;
+    height: 600px;
+    position: relative;
+}
+
+.console-screen {
+    background-color: #222;
+    border: 5px solid #000;
+    border-radius: 5px;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container, .footer__copy, .social__links, .footer-social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo, .header__nav, .social__links, .skills__container, .projects__container, .award__container, .footer-social {
+    margin-bottom: 10px;
+}
+
+.nav__list, .footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav__link, .social__link {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+.social__link i {
+    font-size: 1.5em;
+    margin: 0 5px;
+}
+
+.main-title {
+    font-size: 1.5em;
+}
+
+.title-highlight {
+    color: #9A32CD; /* Purple highlight */
+}
+
+.button {
+    color: #FFF;
+    background-color: #9A32CD; /* Purple button */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about__container, .skills__container, .projects__container, .award__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__subtitle, .skills__subtitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.about__text, .skills__text, .project-card__info p {
+    text-align: center;
+}
+
+.projects__container, .award__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project-card__info {
+    text-align: center;
+}
+
+.button--small {
+    font-size: 0.8em;
+    padding: 3px 8px;
+}
