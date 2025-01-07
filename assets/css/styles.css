@@ -112,9 +112,9 @@ body {
 
 .buttons-group {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin:  5pt 12pt;
 }
 
 .button-a, .button-b {
