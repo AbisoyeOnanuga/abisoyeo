@@ -15,7 +15,6 @@ body {
 
 .gameboy-advance {
     display: flex;
-    flex-direction: column;
     align-items: center;
     border: 15px solid #333;
     border-radius: 20px;
@@ -39,6 +38,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.console-buttons {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .button-l, .button-r {
@@ -75,9 +80,9 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    position: absolute;
-    left: -48px;
-    top: 181px;
+    position: relative;
+    left: 0px;
+    top: 0px;
 }
 
 .d-pad div {
@@ -88,8 +93,21 @@ body {
     border-radius: 3px;
 }
 
-.d-pad-center {
+.d-pad-up {
     background-color: #111;
+    position: relative;
+}
+.d-pad-down {
+    background-color: #111;
+    position: relative;
+}
+.d-pad-left {
+    background-color: #111;
+    position: relative;
+}
+.d-pad-right {
+    background-color: #111;
+    position: relative;
 }
 
 .buttons-group {
@@ -113,18 +131,19 @@ body {
 
 .start-select {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
 .button-start, .button-select {
-    width: 70px;
-    height: 30px;
+    width: 100pt;
+    height: 25pt;
     background-color: #444;
     color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 25pt;
     font-size: 1em;
 }
 
