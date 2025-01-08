@@ -96,11 +96,13 @@ body {
 .d-pad-up {
     background-color: #111;
     position: relative;
+    top: -10px;
 
 }
 .d-pad-down {
     background-color: #111;
     position: relative;
+    top: 10px;
 }
 .d-pad-left {
     background-color: #111;
