@@ -33,6 +33,7 @@ body {
     width: 90%;
     aspect-ratio: 3 / 2;
     overflow-y: scroll;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     padding: 20px;
     box-sizing: border-box;
     flex-direction: column;
@@ -43,7 +44,6 @@ body {
 .console-buttons {
     display: flex;
     flex-direction: column;
-
 }
 
 .button-l, .button-r {
@@ -97,7 +97,6 @@ body {
     background-color: #111;
     position: relative;
     top: -10px;
-
 }
 .d-pad-down {
     background-color: #111;
@@ -121,7 +120,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin:  5pt 12pt;
+    margin: 5pt 12pt;
 }
 
 .button-a, .button-b {
@@ -215,6 +214,7 @@ body {
 
 .about__text, .skills__text, .project-card__info p {
     text-align: center;
+    max-width: 100%; /* Ensure text doesn't overflow */
 }
 
 .projects__container, .award__container {
@@ -231,10 +231,12 @@ body {
     background-color: #333;
     padding: 10px;
     border-radius: 5px;
+    max-width: 100%; /* Ensure card doesn't overflow */
 }
 
 .project-card__info {
     text-align: center;
+    max-width: 100%; /* Ensure text doesn't overflow */
 }
 
 .button--small {
@@ -250,26 +252,9 @@ body {
     text-align: center;
     color: #FFF;
     border-top: 5px solid #333;
-    position: relative;
-}
-
-.footer__copy {
-    margin-bottom: 10px;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.footer-social a {
-    color: #00FF00;
-    text-decoration: none;
-}
-
-.footer-social i {
-    font-size: 1.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* Button hover effects */
