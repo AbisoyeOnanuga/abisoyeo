@@ -239,6 +239,11 @@ body {
     max-width: 100%; /* Ensure text doesn't overflow */
 }
 
+.project-card__content img {
+    max-width: 100%; /* Make sure images fit within their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .button--small {
     font-size: 0.8em;
     padding: 3px 8px;
