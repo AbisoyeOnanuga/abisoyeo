@@ -104,10 +104,12 @@ body {
 .d-pad-left {
     background-color: #111;
     position: relative;
+    left: 20px;
 }
 .d-pad-right {
     background-color: #111;
     position: relative;
+    right: 20px;
 }
 
 .buttons-group {
