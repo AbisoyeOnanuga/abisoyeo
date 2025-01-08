@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Monaco', 'Courier New', monospace; /* Adding a fallback font */
 }
 
 .gameboy-advance {
