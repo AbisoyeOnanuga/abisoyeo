@@ -26,8 +26,15 @@ document.addEventListener('keydown', (event) => {
 });
 
 // Add event listeners for D-pad buttons
-document.querySelector('.d-pad-up').addEventListener('click', () => screen.scrollBy(0, -50));
-document.querySelector('.d-pad-down').addEventListener('click', () => screen.scrollBy(0, 50));
+document.querySelector('.d-pad-up').addEventListener('click', () => {
+    const screen = document.querySelector('.console-screen');
+    screen.scrollBy(0, -50);
+});
+
+document.querySelector('.d-pad-down').addEventListener('click', () => {
+    const screen = document.querySelector('.console-screen');
+    screen.scrollBy(0, 50);
+});
 
 // Add event listeners for Start, Select, A, and B buttons
 document.querySelector('.button-start').addEventListener('click', () => {
