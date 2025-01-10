@@ -9,12 +9,6 @@ document.addEventListener('keydown', (event) => {
         case 'ArrowDown':
             screen.scrollBy(0, 50); // Scroll down
             break;
-        case 'ArrowLeft':
-            screen.scrollBy(-50, 0); // Scroll left
-            break;
-        case 'ArrowRight':
-            screen.scrollBy(50, 0); // Scroll right
-            break;
         case 'Enter':
             // Trigger 'A' button action (e.g., follow links, submit forms)
             const activeElement = document.activeElement;
@@ -34,10 +28,19 @@ document.addEventListener('keydown', (event) => {
 // Add event listeners for D-pad buttons
 document.querySelector('.d-pad-up').addEventListener('click', () => screen.scrollBy(0, -50));
 document.querySelector('.d-pad-down').addEventListener('click', () => screen.scrollBy(0, 50));
-document.querySelector('.d-pad-left').addEventListener('click', () => screen.scrollBy(-50, 0));
-document.querySelector('.d-pad-right').addEventListener('click', () => screen.scrollBy(50, 0));
 
-// Add event listeners for A and B buttons
+// Add event listeners for Start, Select, A, and B buttons
+document.querySelector('.button-start').addEventListener('click', () => {
+    const activeElement = document.activeElement;
+    if (activeElement && activeElement.tagName === 'A') {
+        activeElement.click();
+    }
+});
+
+document.querySelector('.button-select').addEventListener('click', () => {
+    window.history.back();
+});
+
 document.querySelector('.button-a').addEventListener('click', () => {
     const activeElement = document.activeElement;
     if (activeElement && activeElement.tagName === 'A') {
