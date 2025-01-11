@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Monaco', 'Courier New', monospace; /* Adding a fallback font */
+    font-family: 'Press Start 2P', 'Arial', sans-serif; /* Adding a fallback font */
 }
 
 .gameboy-advance {
@@ -244,11 +244,7 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
-.skills__img {
-    max-width: 100%; /* Make sure images fit within their container */
-    height: auto; /* Maintain aspect ratio */
-}
-div .about__img img {
+.about__img, .skills__img {
     max-width: 100%; /* Make sure images fit within their container */
     height: auto; /* Maintain aspect ratio */
 }
