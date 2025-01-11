@@ -286,6 +286,11 @@ div .about__img img {
     background-color: #00FF00;
 }
 
+/* Active button state for visual feedback */
+.active {
+    background-color: #00FF00 !important;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .gameboy-advance {
