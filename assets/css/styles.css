@@ -275,6 +275,10 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+.about__img img {
+    max-width: 80%;
+}
+
 .button--small {
     font-size: 0.8em;
     padding: 3px 8px;
